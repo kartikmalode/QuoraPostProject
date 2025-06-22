@@ -1,6 +1,5 @@
-/* General Styles - Consistent with previous page */
 * {
-    box-sizing: border-box; /* Apply to all elements for predictable sizing */
+    box-sizing: border-box; 
 }
 
 body {
@@ -14,14 +13,13 @@ body {
 }
 
 h1 {
-    color: #b92b27; /* Quora's red color */
+    color: #b92b27; 
     font-size: 28px;
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e2e2e2;
 }
 
-/* Form Container */
 form {
     background-color: white;
     border-radius: 4px;
@@ -32,10 +30,9 @@ form {
     width: 100%;
 }
 
-/* Input & Textarea */
 input[type="text"],
 textarea {
-    width: 100%; /* Full width */
+    width: 100%; 
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -58,7 +55,6 @@ textarea {
     resize: vertical;
 }
 
-/* Button */
 button {
     background-color: #b92b27;
     color: white;
@@ -75,7 +71,6 @@ button:hover {
     background-color: #9e2421;
 }
 
-/* Label */
 label {
     display: block;
     margin-bottom: 8px;
@@ -83,7 +78,6 @@ label {
     color: #555;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     body {
         padding: 15px;
