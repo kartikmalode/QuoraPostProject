@@ -1,6 +1,3 @@
-/* styleShow.css - Updated with requested changes */
-
-/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -11,26 +8,23 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header container */
 .header-container {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 30px auto;
 }
 
-/* Header aligned left */
 h2 {
     color: #b92b27;
     font-size: 28px;
-    margin: 0 0 10px 0; /* Removed auto margins for left alignment */
+    margin: 0 0 10px 0; 
     padding-bottom: 0;
     border-bottom: none;
-    text-align: left; /* Changed to left alignment */
+    text-align: left; 
     width: 100%;
     box-sizing: border-box;
 }
 
-/* HR line below header */
 .header-line {
     border: 0;
     height: 1px;
@@ -39,7 +33,6 @@ h2 {
     width: 100%;
 }
 
-/* Post Detail Container */
 .post-detail {
     background-color: white;
     border-radius: 4px;
@@ -51,7 +44,6 @@ h2 {
     box-sizing: border-box;
 }
 
-/* Button container to match post-detail width */
 .button-container {
     width: 100%;
     max-width: 800px;
@@ -59,7 +51,6 @@ h2 {
     box-sizing: border-box;
 }
 
-/* Back Button - matches post-detail width */
 .back-link {
     display: block;
     background-color: #b92b27;
@@ -82,7 +73,6 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Rest of your existing styles remain the same */
 .post-meta {
     margin-bottom: 20px;
 }
@@ -118,7 +108,6 @@ h2 {
     color: #242424;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     body {
         padding: 20px 15px;
