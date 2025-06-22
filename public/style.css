@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #b92b27;
+  font-size: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* Post Container */
+.post-container {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+}
+
+/* Username Style */
+.post-container p:first-child {
+  font-weight: bold;
+  color: #2b6dad;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+/* Post ID Style */
+.post-container p:nth-child(2) {
+  color: #666;
+  font-size: 13px;
+  margin: 0 0 15px 0;
+}
+
+/* Content Sub-box */
+.post-content {
+  background-color: #f8f9fa;
+  border-left: 3px solid #b92b27;
+  border-radius: 0 4px 4px 0;
+  padding: 15px;
+  margin: 15px 0 20px 0;
+}
+
+.post-content p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #242424;
+}
+
+/* Force post-content text styles */
+.post-content p, 
+.post-content p * {
+  color: #242424 !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+
+/* Action Links Container */
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 15px;
+}
+
+/* Detail and Edit Links */
+.post-actions a {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #2b6dad;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.post-actions a:hover {
+  background-color: #f0f7ff;
+  text-decoration: underline;
+  border-color: #e2e2e2;
+}
+
+/* Delete Button */
+.post-container form button {
+  background-color: #f8f9fa;
+  color: #b92b27;
+  border: 1px solid #e2e2e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.post-container form button:hover {
+  background-color: #ffeeee;
+  border-color: #b92b27;
+}
+
+/* Create New Post Link */
+.create-link {
+  display: block;
+  background-color: #b92b27;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-link:hover {
+  background-color: #9e2421;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .post-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .post-content {
+    padding: 12px;
+  }
+
+  .post-actions a {
+    flex: 1 1 100%; /* Stack links on small screens */
+    margin-bottom: 10px;
+  }
+}

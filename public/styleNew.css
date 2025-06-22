@@ -1,0 +1,99 @@
+/* General Styles - Consistent with previous page */
+* {
+    box-sizing: border-box; /* Apply to all elements for predictable sizing */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #b92b27; /* Quora's red color */
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    width: 100%;
+}
+
+/* Input & Textarea */
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border 0.3s ease;
+    display: block;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b92b27;
+    box-shadow: 0 0 0 2px rgba(185, 43, 39, 0.2);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Button */
+button {
+    background-color: #b92b27;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #9e2421;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}

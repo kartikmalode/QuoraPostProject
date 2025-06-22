@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="/styleShow.css">
+</head>
+<body>
+    <div class="header-container">
+        <h2>Post Details</h2>
+        <hr class="header-line">
+    </div>
+
+    <div class="post-wrapper">
+        <div class="post-detail">
+            <div class="post-meta">
+                <p><%= post.username %></p>
+                <p>Post ID: <%= post.id %></p>
+            </div>
+
+            <div class="post-content-box">
+                <p><%= post.content %></p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="/posts" class="back-link">← Back to All Posts</a>
+        </div>
+    </div>
+</body>
+</html>
