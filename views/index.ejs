@@ -17,8 +17,8 @@
             </div>
 
             <div class="post-actions">
-                <a href="http://localhost:3000/posts/<%= post.id %>">See In Detail</a>
-                <a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit Post</a>
+                <a href="/posts/<%= post.id %>">See In Detail</a>
+                <a href="/posts/<%= post.id %>/edit">Edit Post</a>
             </div>
 
             <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
@@ -28,6 +28,6 @@
 
     <% } %>
 
-    <a href="http://localhost:3000/posts/new" class="create-link">Create New Post</a>
+    <a href="/posts/new" class="create-link">Create New Post</a>
 </body>
 </html>
