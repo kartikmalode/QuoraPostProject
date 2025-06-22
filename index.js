@@ -41,6 +41,10 @@ app.listen(port, () => {
     console.log(`Running on port ${port}`);
 });
 
+app.get("/", (req, res) => {
+    res.redirect("/posts");
+});
+
 app.get("/posts", (req, res) => {
     res.render("index.ejs", { posts });
 });
