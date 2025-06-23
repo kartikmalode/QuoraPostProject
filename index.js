@@ -22,18 +22,23 @@ app.use(methodOverride("_method"));
 let posts = [
     {
         id : uuidv4(),
-        username : "Dnyanesh3256",
-        content : "I am D.B. Tupe"
+        username : "InspireDaily",
+        content : "Success is not final, failure is not fatal—it's the courage to continue that counts. Keep pushing forward! 💪✨ #Motivation #NeverGiveUp"
     },
     {
         id : uuidv4(),
-        username : "Raj65",
-        content : "I am Raj"
+        username : "WanderlustAdventures",
+        content : "Just touched down in Bali! 🌴 The beaches here are unreal. Can't wait to explore more! Any recommendations? #TravelDiaries #BaliVibes"
     },
     {
         id : uuidv4(),
-        username : "Aman8945",
-        content : "I am Aman"
+        username : "FoodieDelights",
+        content : "Homemade pizza night! 🍕🔥 Toppings: pepperoni, mushrooms, and extra cheese. Who’s hungry? #FoodLover #HomeCooking"
+    },
+    {
+        id : uuidv4(),
+        username : "TechGeek2023",
+        content : "Just got the new iPhone 15! The camera quality is insane. 📱✨ Anyone else upgraded yet? #TechTalk #GadgetLover"
     }
 ];
 
