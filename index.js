@@ -15,15 +15,16 @@ app.set("view engine", "ejs");
 
 app.set("views", path.join(__dirname, "views"));
 
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
-// app.use(express.static(path.join(__dirname, "public")), {
-//   setHeaders: (res, path) => {
-//     if (path.endsWith('.css')) {
-//       res.setHeader('Content-Type', 'text/css');
-//     }
-//   }
-// });
+// Add this near your other middleware:
+app.use("/public", express.static(path.join(__dirname, "/public")), {
+  setHeaders: (res, path) => {
+    if (path.endsWith(".css")) {
+      res.type("text/css");
+    }
+  }
+});
 
 app.use(methodOverride("_method"));
 
