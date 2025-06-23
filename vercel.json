@@ -2,51 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "index.js",   
       "use": "@vercel/node"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/public/(.*)",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      },
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/posts/new",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/posts/([^/]+)/edit",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/posts/([^/]+)",
-      "dest": "/index.js"
+      "src": "/",
+      "dest": "/index.js"  
     },
     {
       "src": "/posts",
+      "dest": "/index.js"  
+    },
+    {
+      "src": "/posts/(.*)", 
       "dest": "/index.js"
     },
     {
-      "src": "/",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/style.css",
-      "destination": "/public/style.css"
+      "src": "/public/(.*)", 
+      "dest": "/public/$1"
     }
   ]
 }
