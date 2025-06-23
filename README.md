@@ -4,6 +4,12 @@ A CRUD (Create, Read, Update, Delete) based web app inspired by Quora post manag
 
 ---
 
+## 🚀 Live Demo
+
+👉 [View Live Project](https://quora-post-project-lime.vercel.app/)
+
+---
+
 ## 🚀 Features
 
 - Create a new post (username + content)
