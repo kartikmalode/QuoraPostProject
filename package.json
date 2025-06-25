@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dnyanesh3256/QuoraPostProject.git"
+    "url": "git+https://github.com/kartikmalode/QuoraPostProject.git"
   },
   "keywords": [],
-  "author": "Dnyaneshwar Tupe",
+  "author": "Kartik Malode",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dnyanesh3256/QuoraPostProject/issues"
+    "url": "https://github.com/kartikmalode/QuoraPostProject/issues"
   },
-  "homepage": "https://github.com/Dnyanesh3256/QuoraPostProject#readme",
+  "homepage": "https://github.com/kartikmalode/QuoraPostProject#readme",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
